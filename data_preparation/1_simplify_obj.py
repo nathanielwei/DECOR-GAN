@@ -30,12 +30,12 @@ def load_obj(dire):
         line = lines[i].split()
         if len(line)==0:
             continue
-        if line[0] == 'v':
+        if line[0] == 'v':          # Nate: e.g. v -0.185488 -0.33566 -0.224112
             x = float(line[1])
             y = float(line[2])
             z = float(line[3])
             vertices.append([x,y,z])
-        if line[0] == 'f':
+        if line[0] == 'f':          # Nate: e.g. f 193/502 191/501 255/500
             x = int(line[1].split("/")[0])
             y = int(line[2].split("/")[0])
             z = int(line[3].split("/")[0])
